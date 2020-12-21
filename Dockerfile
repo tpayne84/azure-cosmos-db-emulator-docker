@@ -3,9 +3,6 @@
 # Indicates that the windowsservercore image will be used as the base image.
 FROM mcr.microsoft.com/windows/servercore:20H2
 
-# Metadata indicating an image maintainer.
-MAINTAINER mominag@microsoft.com
-
 # Add the CosmosDB installer msi into the package
 ADD https://aka.ms/cosmosdb-emulator c:\\CosmosDBEmulator\\AzureCosmosDB.Emulator.msi
 
